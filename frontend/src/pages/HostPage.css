@@ -1,0 +1,38 @@
+.host-page { padding: 14px 14px 40px; }
+.host-page .wrap { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 14px; max-width: 640px; margin: 0 auto; }
+.host-page .card { background: var(--panel); border: 1px solid var(--edge); border-radius: 18px; padding: 14px; }
+.host-page .card h2 { font-family: var(--mono); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--dim); margin: 0 0 10px; font-weight: 500; }
+
+.host-page .scores { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.host-page .sc { border: 1px solid var(--edge); border-top: 3px solid var(--slot); border-radius: 14px; padding: 10px; }
+.host-page .sc .n { font-weight: 700; font-size: 15px; margin-bottom: 2px; }
+.host-page .sc .row { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+.host-page .sc .v { font-size: 30px; font-weight: 800; color: var(--slot); font-variant-numeric: tabular-nums; min-width: 40px; text-align: center; }
+.host-page .sc button { padding: 8px 0; flex: 1; font-size: 18px; }
+
+.host-page .q { font-size: 19px; font-weight: 700; line-height: 1.25; letter-spacing: -.01em; }
+.host-page .ans { margin-top: 10px; padding: 10px 12px; border-radius: 12px; background: rgba(179,105,124,.12); border: 1px solid rgba(179,105,124,.4); color: var(--gold); font-weight: 600; }
+.host-page .picks { margin-top: 10px; display: grid; gap: 6px; font-size: 14px; height: 220px; overflow-y: auto; }
+.host-page .picks div { display: flex; gap: 8px; align-items: center; }
+.host-page .picks .who { font-weight: 700; color: var(--slot); }
+.host-page .picks .ms { font-family: var(--mono); font-size: 12px; color: var(--dim); margin-left: auto; }
+.host-page .ok { color: var(--gold); }
+
+.host-page .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.host-page .grid .wide { grid-column: 1 / -1; }
+.host-page .grid button, .host-page .grid select { padding: 16px 10px; font-size: 15px; font-weight: 600; }
+.host-page .p1 { border-color: var(--p1); color: var(--p1); }
+.host-page .p2 { border-color: var(--p2); color: var(--p2); }
+
+.host-page .nav { display: flex; gap: 10px; }
+.host-page .nav button { flex: 1; }
+.host-page .fields { display: grid; gap: 10px; }
+.host-page .small { font-size: 13px; color: var(--dim); }
+.host-page .roster-team { margin-bottom: 10px; }
+.host-page .roster-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 0; }
+.host-page .roster-row button { padding: 4px 10px; font-size: 13px; }
+.host-page details summary { font-family: var(--mono); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--dim); cursor: pointer; }
+.host-page .builder-link {
+  display: block; text-align: center; text-decoration: none; padding: 14px 16px;
+  border: 1px solid var(--edge); border-radius: 14px; color: var(--text);
+}

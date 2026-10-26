@@ -1,0 +1,17 @@
+.login-page {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 14px;
+}
+.login-page .box {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 340px;
+  display: grid;
+  gap: 14px;
+  text-align: center;
+}
+.login-page h1 { font-size: 28px; font-weight: 800; letter-spacing: -.03em; margin: 0; }
+.login-page .fields { display: grid; grid-template-columns: 1fr; gap: 10px; }

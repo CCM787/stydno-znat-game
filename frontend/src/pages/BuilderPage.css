@@ -1,0 +1,31 @@
+.builder-page { padding: 14px 14px 60px; }
+.builder-page .wrap { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 18px; max-width: 720px; margin: 0 auto; }
+.builder-page h1 { font-size: 22px; margin: 0; }
+.builder-page .back { font-size: 13px; color: var(--dim); text-decoration: none; }
+.builder-page .card { background: var(--panel); border: 1px solid var(--edge); border-radius: 18px; padding: 14px; }
+.builder-page .card h2 { font-family: var(--mono); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--dim); margin: 0 0 10px; font-weight: 500; }
+.builder-page .fields { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.builder-page .row { display: flex; gap: 10px; }
+.builder-page .row > * { flex: 1; }
+.builder-page .small { font-size: 13px; color: var(--dim); }
+.builder-page .list { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 12px; }
+.builder-page .item { border: 1px solid var(--edge); border-radius: 12px; padding: 10px 12px; display: flex; gap: 10px; align-items: center; min-width: 0; }
+.builder-page .item .txt { flex: 1; min-width: 0; }
+.builder-page .item .txt .t { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.builder-page .item .txt .m { font-size: 12px; color: var(--dim); margin-top: 2px; }
+.builder-page .item button { padding: 6px 10px; font-size: 13px; }
+.builder-page .tag { font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--gold); }
+.builder-page .filters { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+.builder-page .filters button { padding: 6px 12px; font-size: 13px; }
+.builder-page .filters button.on { background: var(--hot); border-color: transparent; color: var(--onaccent); }
+.builder-page .opts-edit { display: grid; grid-template-columns: 1fr; gap: 6px; }
+.builder-page .opts-edit .row { align-items: center; }
+.builder-page .opts-edit input[type=radio] { width: auto; flex: none; }
+.builder-page .round { border: 1px solid var(--edge); border-radius: 12px; padding: 10px; display: grid; grid-template-columns: 1fr; gap: 8px; }
+.builder-page .round .qpick { display: grid; grid-template-columns: 1fr; gap: 6px; max-height: 180px; overflow-y: auto; }
+.builder-page .round .qpick label { display: flex; gap: 8px; align-items: flex-start; font-size: 14px; }
+.builder-page .round .qpick input { width: auto; flex: none; margin-top: 3px; }
+.builder-page .imgfield { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.builder-page .imgpreview { max-height: 120px; border-radius: 10px; object-fit: contain; }
+.builder-page .imgfield .row input { flex: 1; }
+.builder-page .filebtn { flex: none; display: flex; align-items: center; cursor: pointer; }

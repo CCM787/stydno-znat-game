@@ -1,0 +1,26 @@
+.home-page {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.home-page .box {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: grid;
+  gap: 14px;
+  padding: 24px;
+}
+.home-page h1 { font-size: 54px; font-weight: 800; letter-spacing: -.04em; margin: 0; }
+.home-page h1 span { color: var(--hot); }
+.home-page a {
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: 14px;
+  padding: 16px 28px;
+  font-weight: 600;
+}
+.home-page a small { display: block; color: var(--dim); font-weight: 400; font-size: 13px; margin-top: 2px; }

@@ -1,0 +1,8 @@
+logs/
+node_modules/
+data/
+
+# public/ теперь полностью генерируется сборкой frontend/ (см. README) — не коммитим.
+/public/
+frontend/dist/
+frontend/*.tsbuildinfo

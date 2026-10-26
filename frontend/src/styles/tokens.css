@@ -1,0 +1,86 @@
+:root {
+  --ink: #17140f;
+  --panel: #211d17;
+  --edge: #342f27;
+  --hot: #b3697c;
+  --gold: #b3697c;
+  --onaccent: #1f1114;
+  --p1: #6f9a8d;
+  --p2: #b98a5a;
+  --dim: #8f887c;
+  --text: #ece6da;
+  --display: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, "DejaVu Sans Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--display);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root { min-height: 100%; }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(120% 70% at 50% -20%, rgba(179, 105, 124, .09), transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+button {
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: 14px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: transform .08s ease, background .15s ease, border-color .15s ease;
+}
+button:active { transform: scale(.97); }
+button:disabled { opacity: .35; cursor: not-allowed; }
+button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--text);
+  background: #14120d;
+  border: 1px solid var(--edge);
+  border-radius: 12px;
+  padding: 12px 14px;
+  width: 100%;
+}
+textarea { resize: vertical; }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--hot); border-color: transparent; }
+
+.hot { background: var(--hot); border-color: transparent; color: var(--onaccent); font-weight: 700; }
+.gold { background: var(--gold); border-color: transparent; color: var(--onaccent); font-weight: 700; }
+.ghost { background: transparent; }
+
+.toast {
+  position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%);
+  background: var(--hot); color: var(--onaccent); font-weight: 700;
+  padding: 10px 18px; border-radius: 999px; z-index: 9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
